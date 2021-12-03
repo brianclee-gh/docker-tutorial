@@ -23,7 +23,6 @@ help:
 .DEFAULT_GOAL := all
 
 build:
-#	    @docker build --pull --build-arg ALP_VER=${alpver} --build-arg KCTL_VER=${kctlver} -t ${IMAGEFULLNAME} .
 		@docker build -t ${TAGNAME} .
 
 run:
